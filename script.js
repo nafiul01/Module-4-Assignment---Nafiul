@@ -45,7 +45,7 @@ let productList = document.getElementById('product-list');
 
 for (i=0; i<products.length; i++){
     let product = document.createElement("div");
-    product.innerHTML = `<li class="shadow-md rounded-md p-5 text-center"><div class="flex justify-center items-center"><img src="${products[i].img}" alt=""></div><p class="text-tColor2 font-bold">${products[i].name}</p><p>${products[i].price} tk/kg</p><button class="bg-green-600 text-white rounded-md px-3 py-1 mt-2" id="add-to">Add to Cart</button><p class="hidden">${products[i].id}</p></li>`;
+    product.innerHTML = `<li class="shadow-md rounded-md p-5 text-center"><div class="flex justify-center items-center"><img src="${products[i].img}" alt=""></div><p class="text-tColor2 font-bold">${products[i].name}</p><p>${products[i].price} tk/kg</p><button class="bg-green-600 text-white rounded-md px-3 py-1 mt-2 add-to">Add to Cart</button><p class="hidden">${products[i].id}</p></li>`;
     productList.appendChild(product);
 }
 
@@ -53,7 +53,7 @@ for (i=0; i<products.length; i++){
 
 let cartList = document.getElementById('cart-list');
 
-let cartButton = document.querySelectorAll('#add-to');
+let cartButton = document.querySelectorAll('.add-to');
 
 let productCartArray = [];
 
@@ -80,6 +80,7 @@ let clearButton = document.getElementById('clear-btn');
 clearButton.addEventListener('click', () =>{
     cartList.innerHTML='';
     subtotalElement.innerHTML = '0';
+    subTotal =0;
 });
 
 
