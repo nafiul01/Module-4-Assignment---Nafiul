@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="max-w-[1200px] mx-auto">
+    <div class="grid grid-cols-2 gap-10">
+
+        <section>
+            <p class="text-center font-bold text-green-700 p-5 shadow">Product List</p>
+
+            <ul class="grid grid-cols-3 gap-5" id="product-list">
+                <!-- <li class="shadow-md rounded-md p-5 text-center">
+                    <div class="flex justify-center items-center"><img src="img/product-1.png" alt=""></div>
+                    <p class="text-tColor2 font-bold">Tomatoo</p>
+                    <p>70 tk/kg</p>
+                    <button class="bg-green-600 text-white rounded-md px-3 py-1 mt-2" id="add-to">Add to Cart</button>
+                </li> -->
+
+            </ul>
+
+        </section>
+
+        <section>
+            <p class="text-center font-bold text-green-700 p-5 shadow">Cart List</p>
+            <ul id="cart-list" class="mt-5">
+                <!-- <li class="border-b-2 pb-2 flex justify-between items-center">
+                   <div class="flex items-center gap-2">
+                        <div class="flex items-center justify-center h-14 w-14">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-bold">Tomatoo</p>
+                            <p>70tk/kg</p>
+                        </div>
+                   </div> 
+                   <p class="font-bold">x 2</p>
+                   <p class="font-bold">70</p>
+                </li> -->
+            </ul>
+            <div class="flex items-center justify-between mt-5 font-bold">
+                <p>Subtotal</p>
+                <p id="subtotal">0</p>
+            </div>
+            <button id="clear-btn" class="bg-green-600 text-white px-3 py-2 rounded-md mt-5">Clear</button>
+        </section>
+
+
+
+    </div>
+
+
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
